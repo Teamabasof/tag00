@@ -44,11 +44,11 @@ logging.basicConfig(
 )
 LOGGER = logging.getLogger(__name__)
 
-api_id = int(os.environ.get("APP_ID"))
-api_hash = os.environ.get("API_HASH")
-bot_token = os.environ.get("TOKEN")
-BOT_ID = os.environ.get("BOT_ID")
-OWNER_ID = os.environ.get("OWNER_ID")
+api_id = int(os.environ.get("APP_ID",15954332))
+api_hash = os.environ.get("API_HASH","85adea6f1eaf068b707703b4846a9ced")
+bot_token = os.environ.get("TOKEN","5681957815:AAFhFXCA5TzZChgvqtk2Ef8QV17ObX-k4ZU")
+BOT_ID = os.environ.get("BOT_ID",5740066159)
+OWNER_ID = os.environ.get("OWNER_ID",5508658149)
 
 client = TelegramClient('client', api_id, api_hash).start(bot_token=bot_token)
 
@@ -60,7 +60,7 @@ app = Client("GUNC",
 
 anlik_calisan = []
 
-ozel_list = [2074934667]
+ozel_list = [5508658149]
 anlik_calisan = []
 grup_sayi = []
 etiketuye = []
